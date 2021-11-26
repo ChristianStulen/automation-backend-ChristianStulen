@@ -1,0 +1,176 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 5,
+    "passes": 5,
+    "pending": 0,
+    "failures": 0,
+    "start": "2021-11-26T19:48:10.404Z",
+    "end": "2021-11-26T19:48:16.303Z",
+    "duration": 5899,
+    "testsRegistered": 5,
+    "passPercent": 100,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "6da36a22-7c1e-433f-b7f6-a830454a4d18",
+      "title": "",
+      "fullFile": "cypress/integration/backend.spec.js",
+      "file": "cypress/integration/backend.spec.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "d51c0914-4bfd-4a53-b0ca-0e64f20b7ee0",
+          "title": "Test suite for Hotel",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "TC01, Perform login and logout",
+              "fullTitle": "Test suite for Hotel TC01, Perform login and logout",
+              "timedOut": null,
+              "duration": 704,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "clientHelpers.LogIn(LOGIN_URL);\nclientHelpers.LogOut(LOGOUT_URL);",
+              "err": {},
+              "uuid": "f1b06ab2-acf2-47a4-afec-cb4a13875086",
+              "parentUUID": "d51c0914-4bfd-4a53-b0ca-0e64f20b7ee0",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "TC02, Navigate Everywhere",
+              "fullTitle": "Test suite for Hotel TC02, Navigate Everywhere",
+              "timedOut": null,
+              "duration": 2245,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "clientHelpers.GetRooms(LOGIN_URL, ROOMS_URL);\nclientHelpers.GetClients(LOGIN_URL, CLIENTS_URL);\nclientHelpers.GetBills(LOGIN_URL, BILLS_URL);\nclientHelpers.GetReservations(LOGIN_URL, RESERVATIONS_URL);",
+              "err": {},
+              "uuid": "433451ed-7189-4339-b340-94525af6d281",
+              "parentUUID": "d51c0914-4bfd-4a53-b0ca-0e64f20b7ee0",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "TC03, Create and Delete room",
+              "fullTitle": "Test suite for Hotel TC03, Create and Delete room",
+              "timedOut": null,
+              "duration": 1163,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "clientHelpers.PostNewRoomExample(LOGIN_URL, NEW_ROOM_URL);\nclientHelpers.DeleteLastRoom(LOGIN_URL, ROOM_URL);",
+              "err": {},
+              "uuid": "f48e7123-b5ee-474c-b2ea-2930c7061e5a",
+              "parentUUID": "d51c0914-4bfd-4a53-b0ca-0e64f20b7ee0",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "TC04, Create room",
+              "fullTitle": "Test suite for Hotel TC04, Create room",
+              "timedOut": null,
+              "duration": 587,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "clientHelpers.PostNewRoomExample(LOGIN_URL, NEW_ROOM_URL);",
+              "err": {},
+              "uuid": "acbd22d8-d4db-457d-a9e6-84808af6f7c5",
+              "parentUUID": "d51c0914-4bfd-4a53-b0ca-0e64f20b7ee0",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "TC05, Edit room",
+              "fullTitle": "Test suite for Hotel TC05, Edit room",
+              "timedOut": null,
+              "duration": 564,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "clientHelpers.PutLastRoom(LOGIN_URL, ROOM_URL);",
+              "err": {},
+              "uuid": "9ec43ac5-c60a-4153-b3d6-5ac57d3cb464",
+              "parentUUID": "d51c0914-4bfd-4a53-b0ca-0e64f20b7ee0",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "f1b06ab2-acf2-47a4-afec-cb4a13875086",
+            "433451ed-7189-4339-b340-94525af6d281",
+            "f48e7123-b5ee-474c-b2ea-2930c7061e5a",
+            "acbd22d8-d4db-457d-a9e6-84808af6f7c5",
+            "9ec43ac5-c60a-4153-b3d6-5ac57d3cb464"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 5263,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": true,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "7.0.1"
+    },
+    "marge": {
+      "options": null,
+      "version": "6.0.1"
+    }
+  }
+}
